@@ -1,6 +1,14 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
 resources:
-- https://github.com/jayanth-tjvrr/arlon-bc/bc1/capi-quickstart-eks.yaml
+- https://github.com/jayanth-tjvrr/arlon-bc/bc1
 patches:
-- md-details.yaml
+  - target:
+      group: controlplane.cluster.x-k8s.io
+      version: v1beta1
+      kind: MachineDeployment
+      name: .*
+    path: md-details.yaml
 configurations:
 - configurations.yaml
