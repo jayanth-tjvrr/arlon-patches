@@ -10,5 +10,6 @@ patches:
       group: controlplane.cluster.x-k8s.io
       version: v1beta1
       kind: MachineDeployment
+      name: .*
     path: md-details.yaml
 
