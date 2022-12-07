@@ -1,5 +1,5 @@
 resources:
-- https://github.com/jayanth-tjvrr/arlon-bc/bc1
+- https://github.com/jayanth-tjvrr/arlon-bc/bc1/capi-quickstart-eks.yaml
 patches:
 - md-details.yaml
 configurations:
