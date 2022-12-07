@@ -4,7 +4,7 @@ kind: Kustomization
 resources:
 - git::https://github.com/jayanth-tjvrr/arlon-bc//bc1
 configurations:
-- configurations.yaml
+- git::https://github.com/jayanth-tjvrr/arlon-bc//bc1/configurations.yaml
 patches:
   - target:
       group: controlplane.cluster.x-k8s.io
