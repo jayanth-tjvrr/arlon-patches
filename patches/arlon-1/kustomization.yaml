@@ -5,5 +5,5 @@ resources:
 - git::https://github.com/jayanth-tjvrr/arlon-bc//bc1
 configurations:
 - configurations.yaml
-patchesStrategicMerge:
-- md-details.yaml
+patches:
+- path: md-details.yaml
