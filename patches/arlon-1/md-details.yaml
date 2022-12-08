@@ -5,21 +5,21 @@ metadata:
 spec:
   replicas: 4
   
----
-apiVersion: controlplane.cluster.x-k8s.io/v1beta1
-kind: AWSManagedControlPlane
-metadata:
-  name: .*
-spec:
-  sshKeyName: jay
+# ---
+# apiVersion: controlplane.cluster.x-k8s.io/v1beta1
+# kind: AWSManagedControlPlane
+# metadata:
+#   name: .*
+# spec:
+#   sshKeyName: jay
   
----
-apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
-kind: AWSMachineTemplate
-metadata:
-  name: .*
-spec:
-  template:
-    spec:
-      sshKeyName: jay
----
+# ---
+# apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+# kind: AWSMachineTemplate
+# metadata:
+#   name: .*
+# spec:
+#   template:
+#     spec:
+#       sshKeyName: jay
+# ---
