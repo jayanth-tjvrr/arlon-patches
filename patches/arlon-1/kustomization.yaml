@@ -6,4 +6,4 @@ resources:
 configurations:
 - configurations.yaml
 patches:
-  - path: md-details.yaml
+- md-details.yaml
