@@ -11,3 +11,15 @@ patches:
       version: v1beta1
       kind: MachineDeployment
     path: md-details.yaml
+  - target:
+      group: infrastructure.cluster.x-k8s.io
+      version: v1beta1
+      kind: AWSMachineTemplate
+      name: .*
+    path: md-details.yaml
+  - target:
+      group: cluster.x-k8s.io
+      version: v1beta1
+      kind: MachineDeployment
+      name: .*
+    path: md-details.yaml
