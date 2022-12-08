@@ -6,5 +6,9 @@ resources:
 configurations:
 - configurations.yaml
 patches:
-- md-details.yaml
+  - target:
+      group: controlplane.cluster.x-k8s.io
+      version: v1beta1
+      kind: MachineDeployment
+    path: md-details.yaml
 
