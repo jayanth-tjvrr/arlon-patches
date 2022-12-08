@@ -5,21 +5,23 @@ resources:
 - git::https://github.com/jayanth-tjvrr/arlon-bc//bc1
 configurations:
 - configurations.yaml
-patches:
-  - target:
-      group: controlplane.cluster.x-k8s.io
-      version: v1beta1
-      kind: MachineDeployment
-    path: md-details.yaml
-  - target:
-      group: infrastructure.cluster.x-k8s.io
-      version: v1beta1
-      kind: AWSMachineTemplate
-      name: .*
-    path: md-details.yaml
-  - target:
-      group: cluster.x-k8s.io
-      version: v1beta1
-      kind: MachineDeployment
-      name: .*
-    path: md-details.yaml
+patchesStrategicMerge:
+- md-details.yaml
+# patches:
+#   - target:
+#       group: controlplane.cluster.x-k8s.io
+#       version: v1beta1
+#       kind: MachineDeployment
+#     path: md-details.yaml
+#   - target:
+#       group: infrastructure.cluster.x-k8s.io
+#       version: v1beta1
+#       kind: AWSMachineTemplate
+#       name: .*
+#     path: md-details.yaml
+#   - target:
+#       group: cluster.x-k8s.io
+#       version: v1beta1
+#       kind: MachineDeployment
+#       name: .*
+#     path: md-details.yaml
