@@ -4,20 +4,4 @@ kind: MachineDeployment
 metadata:
   name: .*
 spec:
-  replicas: 3
-  
-# ---
-# apiVersion: controlplane.cluster.x-k8s.io/v1beta1
-# kind: AWSManagedControlPlane
-# metadata:
-#   name: .*
-# spec:
-#   sshKeyName: jay
-  
-# ---
-# apiVersion: controlplane.cluster.x-k8s.io/v1beta1
-# kind: AWSManagedControlPlane
-# metadata:
-#   name: .*
-# spec:
-#   sshKeyName: jay
+  replicas: 4
