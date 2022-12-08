@@ -4,8 +4,22 @@ resources:
 - ../../bc1
 patches:
 - target:
-    group: cluster.x-k8s.io
-    version: v1beta1
+    group: temp
+    version: temp
+    kind: ""
+  path: patch.yaml
+- target:
+    group: temp
+    version: temp
     kind: MachineDeployment
-    name: .*
-  path: md-details.yaml
+  path: patch.yaml
+- target:
+    group: temp
+    version: temp
+    kind: MachineDeployment
+  path: patch.yaml
+- target:
+    group: temp
+    version: temp
+    kind: MachineDeployment
+  path: patch.yaml
