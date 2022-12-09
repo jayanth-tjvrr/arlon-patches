@@ -4,4 +4,4 @@ kind: MachineDeployment
 metadata:
   name: .*
 spec:
-  replicas: 2
+  replicas: 3
